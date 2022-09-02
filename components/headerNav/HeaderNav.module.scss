@@ -1,0 +1,14 @@
+@use "../../styles/variables" as varr;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+  color: #0a2640;
+
+  &__list {
+    display: flex;
+    gap: 4rem;
+  }
+}
