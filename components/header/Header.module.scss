@@ -3,4 +3,12 @@
 .header {
   padding-left: varr.$nav__padding;
   padding-right: varr.$nav__padding;
+
+  @media only screen and (max-width: 650px) {
+    padding: 0 3rem;
+  }
+
+  @media only screen and (max-width: 440px) {
+    padding: 0 5rem;
+  }
 }
