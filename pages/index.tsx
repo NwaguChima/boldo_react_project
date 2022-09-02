@@ -11,7 +11,7 @@ const Home: NextPage = () => {
           name="description"
           content="Boldo helps you build fast templates"
         />
-        <link rel="icon" href="/Logo.svg" />
+        <link rel="icon" href="/images/Logo.svg" />
       </Head>
       <Header />
       <main>Hello Page</main>
