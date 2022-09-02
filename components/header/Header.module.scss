@@ -1,7 +1,6 @@
 @use "../../styles/variables" as varr;
 
 .header {
-  background-color: rgb(126, 153, 51);
   padding-left: varr.$nav__padding;
   padding-right: varr.$nav__padding;
 }
