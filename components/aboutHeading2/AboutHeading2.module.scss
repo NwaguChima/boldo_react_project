@@ -1,17 +1,39 @@
 @use "../../styles/variables" as varr;
 
 .secondaryHeading {
-  max-width: 80rem;
+  max-width: 60%;
 
   p {
     font-size: 2rem;
     line-height: 3.2rem;
     color: varr.$color__grey;
+
+    @media only screen and (max-width: 1000px) {
+      font-size: 1.6rem;
+    }
   }
 
   h2 {
     font-size: 4.8rem;
     font-weight: 400;
     line-height: 7rem;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: 1000px) {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+
+    @media only screen and (max-width: 750px) {
+      font-size: 3.2rem;
+      line-height: 4.4rem;
+      font-weight: 500;
+    }
+
+    @media only screen and (max-width: 550px) {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+      font-weight: 600;
+    }
   }
 }
