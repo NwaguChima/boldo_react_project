@@ -35,7 +35,7 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
             content="Log In"
             width="12.8rem"
             height="4rem"
-            type="filled"
+            type="outline"
             onClick={() => {}}
           />
         </li>
