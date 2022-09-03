@@ -2,14 +2,18 @@
 
 .aboutHeader {
   background-color: varr.$color__primary;
-  min-height: 61.5rem;
+  min-height: 55.5rem;
   color: varr.$main__white;
   padding: 0 varr.$nav__padding;
+
+  @media only screen and (max-width: 800px) {
+    min-height: 45rem;
+  }
 
   &__hero {
     max-width: 78.8rem;
     margin: 0 auto;
-    padding-bottom: 20rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
@@ -27,6 +31,7 @@
       color: #f1f1f1;
       line-height: 2.8rem;
       max-width: 72rem;
+      text-align: center;
 
       @media only screen and (min-width: 1800px) {
         max-width: 200rem;
@@ -37,6 +42,7 @@
       font-size: 6.4rem;
       font-weight: 400;
       line-height: 8.4rem;
+      text-align: center;
 
       @media only screen and (max-width: 800px) {
         font-size: 4rem;

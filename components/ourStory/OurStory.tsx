@@ -6,13 +6,19 @@ interface OurStoryProps {}
 
 const OurStory: React.FC<OurStoryProps> = ({}) => {
   return (
-    <section>
-      <div className={styles.ourStory}>
-        <img src="/images/story-1.svg" alt="Our Story" />
-        <img src="/images/story-2.svg" alt="Our Story" />
-        <img src="/images/story-3.svg" alt="Our Story" />
-        <img src="/images/story-4.svg" alt="Our Story" />
-        <img src="/images/story-5.svg" alt="Our Story" />
+    <section className={styles.ourStory}>
+      <div className={styles.ourStory__images}>
+        <div className={styles.box}>
+          <img src="/images/story-1.svg" alt="Our Story" />
+          <img src="/images/story-4.svg" alt="Our Story" />
+        </div>
+        <div className={styles.box}>
+          <img src="/images/story-2.svg" alt="Our Story" />
+        </div>
+        <div className={styles.box}>
+          <img src="/images/story-3.svg" alt="Our Story" />
+          <img src="/images/story-5.svg" alt="Our Story" />
+        </div>
       </div>
     </section>
   );
