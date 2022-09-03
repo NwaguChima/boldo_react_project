@@ -15,6 +15,15 @@ export const About: React.FC<AboutProps> = ({}) => {
       </Head>
       <header className={styles.aboutHeader}>
         <HeaderNav mode="dark" />
+        <div className="header__content">
+          <p>About</p>
+          <h1>We love to make great things, things that matter.</h1>
+          <p>
+            Funding handshake buyer business-to-business metrics iPad
+            partnership. First mover advantage innovator success deployment
+            non-disclosure.
+          </p>
+        </div>
       </header>
       <main>Hello Page</main>
     </div>
