@@ -6,6 +6,7 @@ interface ButtonPrimaryProps {
   width: string;
   height: string;
   type: "filled" | "outline";
+  mode: string;
   onClick: () => void;
 }
 
@@ -14,11 +15,12 @@ export const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({
   width,
   height,
   type,
+  mode,
   onClick,
 }) => {
   return (
     <button
-      className={`${styles.button} ${styles[type]}`}
+      className={`${styles.button} ${styles[type]} ${styles[mode]}`}
       style={{
         width,
         height,

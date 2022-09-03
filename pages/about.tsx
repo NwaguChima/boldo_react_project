@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
-import Header from "../components/header/Header";
 import HeaderNav from "../components/headerNav/HeaderNav";
+import styles from "./pages.module.scss";
 
 interface AboutProps {}
 
@@ -13,7 +13,7 @@ export const About: React.FC<AboutProps> = ({}) => {
         <meta name="description" content="discover more about Boldo" />
         <link rel="icon" href="/images/Logo.svg" />
       </Head>
-      <header>
+      <header className={styles.aboutHeader}>
         <HeaderNav mode="dark" />
       </header>
       <main>Hello Page</main>

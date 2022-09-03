@@ -13,7 +13,12 @@ const HeaderNav: React.FC<HeaderNavProps> = ({ mode }) => {
     <nav className={styles.nav}>
       <Link href="/">
         <a>
-          <Image src="/images/logo.svg" alt="logo" width={100} height={42} />
+          <Image
+            src={`/images/${mode == "dark" ? "logo_light" : "logo"}.svg`}
+            alt="logo"
+            width={100}
+            height={42}
+          />
         </a>
       </Link>
       <ul
@@ -42,6 +47,7 @@ const HeaderNav: React.FC<HeaderNavProps> = ({ mode }) => {
             width="12.8rem"
             height="4rem"
             type="outline"
+            mode={mode}
             onClick={() => {}}
           />
         </li>

@@ -26,12 +26,18 @@
 .dark {
   li:not(:last-child) {
     border-bottom: 2px solid transparent;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
   }
+}
+
+.dark > li > a {
+  color: varr.$main__white;
 }
 
 .light {

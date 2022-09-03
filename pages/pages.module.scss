@@ -1,0 +1,8 @@
+@use "../styles/variables" as varr;
+
+.aboutHeader {
+  background-color: varr.$color__primary;
+  min-height: 61.5rem;
+  color: varr.$main__white;
+  padding: 0 varr.$nav__padding;
+}
