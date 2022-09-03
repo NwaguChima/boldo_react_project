@@ -5,6 +5,9 @@
   padding-right: varr.$nav__padding;
   min-height: 80rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5.7rem;
 
   @media only screen and (max-width: 650px) {
     padding: 0 3rem;
@@ -28,4 +31,40 @@
   //     -ms-border-radius: 50%;
   //     -o-border-radius: 50%;
   //   }
+}
+
+.heroContainer {
+  // background-color: forestgreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  &__headingText {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    h1 {
+      font-size: 4.8rem;
+      font-weight: 400;
+      line-height: 7.2rem;
+    }
+
+    p {
+      line-height: 2.8rem;
+      color: #777777;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 2.4rem;
+  }
 }
