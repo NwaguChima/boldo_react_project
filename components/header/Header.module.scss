@@ -3,6 +3,7 @@
 .header {
   padding-left: varr.$nav__padding;
   padding-right: varr.$nav__padding;
+  position: relative;
 
   @media only screen and (max-width: 650px) {
     padding: 0 3rem;
@@ -10,5 +11,21 @@
 
   @media only screen and (max-width: 440px) {
     padding: 0 5rem;
+  }
+
+  &__circle {
+    background-color: #f1f1f1;
+    height: 129.3rem;
+    width: 129.3rem;
+    position: absolute;
+    top: -78.9rem;
+    left: 77.7rem;
+    z-index: -1;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
   }
 }
