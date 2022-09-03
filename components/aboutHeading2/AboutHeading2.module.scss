@@ -37,3 +37,15 @@
     }
   }
 }
+
+.dark {
+  h2 {
+    color: varr.$main__white;
+    text-align: center;
+  }
+
+  p {
+    color: varr.$off__white;
+    text-align: center;
+  }
+}

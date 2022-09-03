@@ -1,0 +1,10 @@
+@use "../../styles/variables" as varr;
+
+.numbers {
+  background-color: varr.$color__primary;
+  min-height: 58rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
