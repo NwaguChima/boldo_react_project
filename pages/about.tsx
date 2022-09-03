@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import HeaderNav from "../components/headerNav/HeaderNav";
+import OurStory from "../components/ourStory/OurStory";
 import styles from "./pages.module.scss";
 
 interface AboutProps {}
@@ -25,7 +26,9 @@ export const About: React.FC<AboutProps> = ({}) => {
           </p>
         </div>
       </header>
-      <main>Hello Page</main>
+      <main>
+        <OurStory />
+      </main>
     </div>
   );
 };
