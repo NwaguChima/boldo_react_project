@@ -35,6 +35,11 @@
   img {
     width: 90%;
     margin-bottom: 4rem;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
 
     @media only screen and (max-width: 1300px) {
       margin-bottom: 3rem;
@@ -46,6 +51,14 @@
 
     @media only screen and (max-width: 400px) {
       margin-bottom: 1rem;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
     }
   }
 }
