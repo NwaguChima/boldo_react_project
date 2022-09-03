@@ -3,6 +3,7 @@ import React from "react";
 import HeaderNav from "../components/headerNav/HeaderNav";
 import { OurNumbers } from "../components/ourNumbers/OurNumbers";
 import OurStory from "../components/ourStory/OurStory";
+import { OurTeam } from "../components/ourTeam/OurTeam";
 import styles from "./pages.module.scss";
 
 interface AboutProps {}
@@ -30,6 +31,7 @@ export const About: React.FC<AboutProps> = ({}) => {
       <main>
         <OurStory />
         <OurNumbers />
+        <OurTeam />
       </main>
     </div>
   );
