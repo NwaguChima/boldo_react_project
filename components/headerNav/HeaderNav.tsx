@@ -8,20 +8,24 @@ interface HeaderNavProps {}
 const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
   return (
     <nav className={styles.nav}>
-      <Image src="/images/logo.svg" alt="logo" width={100} height={42} />
+      <Link href="/">
+        <a>
+          <Image src="/images/logo.svg" alt="logo" width={100} height={42} />
+        </a>
+      </Link>
       <ul className={styles.nav__list}>
         <li>
-          <Link href="/">
+          <Link href="/product">
             <a>Product</a>
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/services">
             <a>Services</a>
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/about">
             <a>About</a>
           </Link>
         </li>
