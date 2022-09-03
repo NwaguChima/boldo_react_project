@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { ButtonPrimary } from "../buttons/ButtonPrimary";
 import styles from "./HeaderNav.module.scss";
 
 interface HeaderNavProps {}
@@ -29,7 +30,15 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
             <a>About</a>
           </Link>
         </li>
-        <li>Log In</li>
+        <li>
+          <ButtonPrimary
+            content="Log In"
+            width="12.8rem"
+            height="4rem"
+            type="filled"
+            onClick={() => {}}
+          />
+        </li>
       </ul>
     </nav>
   );
