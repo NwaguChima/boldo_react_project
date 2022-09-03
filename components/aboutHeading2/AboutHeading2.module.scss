@@ -1,0 +1,17 @@
+@use "../../styles/variables" as varr;
+
+.secondaryHeading {
+  max-width: 80rem;
+
+  p {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: varr.$color__grey;
+  }
+
+  h2 {
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 7rem;
+  }
+}
