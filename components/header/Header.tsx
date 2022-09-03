@@ -9,7 +9,7 @@ interface HeaderProps {}
 const Header: React.FC<HeaderProps> = ({}) => {
   return (
     <header className={styles.header}>
-      <HeaderNav />
+      <HeaderNav mode="light" />
       <div className={styles.heroContainer}>
         <div className={styles.heroContainer__items}>
           <div className={styles.heroContainer__headingText}>

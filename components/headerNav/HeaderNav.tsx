@@ -4,9 +4,11 @@ import React from "react";
 import { ButtonPrimary } from "../buttons/ButtonPrimary";
 import styles from "./HeaderNav.module.scss";
 
-interface HeaderNavProps {}
+interface HeaderNavProps {
+  mode: "light" | "dark";
+}
 
-const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
+const HeaderNav: React.FC<HeaderNavProps> = ({ mode }) => {
   return (
     <nav className={styles.nav}>
       <Link href="/">
@@ -14,7 +16,11 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
           <Image src="/images/logo.svg" alt="logo" width={100} height={42} />
         </a>
       </Link>
-      <ul className={styles.nav__list}>
+      <ul
+        className={`${styles.nav__list} ${
+          mode == "dark" ? styles.dark : styles.light
+        }`}
+      >
         <li>
           <Link href="/product">
             <a>Product</a>
