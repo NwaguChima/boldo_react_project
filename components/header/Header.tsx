@@ -26,6 +26,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
               type="filled"
               width="24.7rem"
               height="6rem"
+              mode="light"
               onClick={() => {}}
             />
             <ButtonPrimary
@@ -33,6 +34,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
               type="outline"
               width="18.7rem"
               height="6rem"
+              mode="light"
               onClick={() => {}}
             />
           </div>

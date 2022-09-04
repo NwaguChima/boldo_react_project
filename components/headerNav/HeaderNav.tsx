@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { ButtonPrimary } from "../buttons/ButtonPrimary";
 import styles from "./HeaderNav.module.scss";
+import { IoCloseOutline, IoMenuSharp } from "react-icons/io5";
 
 interface HeaderNavProps {
   mode: "light" | "dark";
@@ -52,6 +53,10 @@ const HeaderNav: React.FC<HeaderNavProps> = ({ mode }) => {
           />
         </li>
       </ul>
+      <div className={styles.nav__icons}>
+        <IoMenuSharp />
+        {/* <IoCloseOutline /> */}
+      </div>
     </nav>
   );
 };
