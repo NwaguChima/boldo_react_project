@@ -4,7 +4,7 @@ import styles from "./OurNumbers.module.scss";
 
 interface OurNumbersProps {}
 
-export const OurNumbers: React.FC<OurNumbersProps> = ({}) => {
+const OurNumbers: React.FC<OurNumbersProps> = ({}) => {
   return (
     <section className={styles.numbers}>
       <AboutHeading2
@@ -30,3 +30,5 @@ export const OurNumbers: React.FC<OurNumbersProps> = ({}) => {
     </section>
   );
 };
+
+export default OurNumbers;

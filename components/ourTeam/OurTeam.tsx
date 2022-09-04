@@ -5,7 +5,7 @@ import styles from "./OurTeam.module.scss";
 
 interface OurTeamProps {}
 
-export const OurTeam: React.FC<OurTeamProps> = ({}) => {
+const OurTeam: React.FC<OurTeamProps> = ({}) => {
   return (
     <section className={styles.ourTeam}>
       <AboutHeading2
@@ -33,3 +33,5 @@ export const OurTeam: React.FC<OurTeamProps> = ({}) => {
     </section>
   );
 };
+
+export default OurTeam;
