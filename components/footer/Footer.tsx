@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import ButtonSecondary from "../buttons/ButtonSecondary";
 import styles from "./Footer.module.scss";
@@ -15,8 +16,8 @@ const Footer: React.FC<FooterProps> = ({}) => {
           <ButtonSecondary content="start now" width="21rem" height="4rem" />
         </form>
       </div>
-      <div className="footer__list">
-        <div className="footer__list__logo">
+      <div className={styles.footer__list}>
+        <div className={styles.footer__list__logo}>
           <Image
             src="/images/logo.svg"
             alt="Boldo-logo"
@@ -29,31 +30,66 @@ const Footer: React.FC<FooterProps> = ({}) => {
           </p>
           <p>All rights reserved.</p>
         </div>
-        <div className="footer__list__links">
-          <div className="footer__items">
+        <div className={styles.footer__list__links}>
+          <div className={styles.footer__items}>
             <h3>Landings</h3>
             <ul>
-              <li>Home</li>
-              <li>Products</li>
-              <li>Services</li>
+              <li>
+                <Link href="/">
+                  <a>Home</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/products">
+                  <a>Products</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/services">
+                  <a>Services</a>
+                </Link>
+              </li>
             </ul>
           </div>
-          <div className="footer__items">
+          <div className={styles.footer__items}>
             <h3>Company</h3>
             <ul>
-              <li>Home</li>
               <li>
-                Careers <span>Hiring</span>
+                <Link href="/">
+                  <a>Home</a>
+                </Link>
               </li>
-              <li>Services</li>
+              <li className={styles.careers}>
+                <Link href="/products">
+                  <a>Careers</a>
+                </Link>
+                <span>Hiring</span>
+              </li>
+              <li>
+                <Link href="/services">
+                  <a>Services</a>
+                </Link>
+              </li>
             </ul>
           </div>
-          <div className="footer__items">
+          <div className={styles.footer__items}>
             <h3>Resources</h3>
             <ul>
-              <li>Blog</li>
-              <li>Products</li>
-              <li>Services</li>
+              <li>
+                <Link href="/blog">
+                  <a>Blog</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>Products</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/services">
+                  <a>Services</a>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
