@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { ButtonPrimary } from "../buttons/ButtonPrimary";
 import styles from "./HeaderNav.module.scss";
-import { IoCloseOutline, IoMenuSharp } from "react-icons/io5";
+import { IoMenuSharp } from "react-icons/io5";
 import { MobileNav } from "./MobileNav";
 
 interface HeaderNavProps {

@@ -58,6 +58,11 @@
       position: absolute;
       top: 1rem;
       right: 1rem;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
     }
 
     ul {
@@ -116,7 +121,10 @@
     }
 
     i {
-      color: varr.$main__white;
+      background-color: varr.$main__white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:hover {
         transform: scale(1.15);
@@ -144,7 +152,11 @@
     background-color: rgba(varr.$main__white, 0.9);
 
     i {
-      color: varr.$color__primary;
+      color: varr.$main__white;
+      background-color: varr.$color__primary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:hover {
         transform: scale(1.15);
