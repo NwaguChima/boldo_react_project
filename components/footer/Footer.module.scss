@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
+    gap: 4rem;
     padding: 6rem 0;
     border-radius: 1.2rem;
     -webkit-border-radius: 1.2rem;
@@ -22,6 +22,27 @@
       font-weight: 400;
       max-width: 45%;
       text-align: center;
+    }
+
+    form {
+      display: flex;
+      width: 30%;
+      input {
+        border-radius: 24rem;
+        -webkit-border-radius: 24rem;
+        -moz-border-radius: 24rem;
+        -ms-border-radius: 24rem;
+        -o-border-radius: 24rem;
+        border: 2px solid varr.$main__white;
+
+        padding: 1rem;
+        width: 100%;
+        padding-left: 2rem;
+
+        &:focus {
+          outline: none;
+        }
+      }
     }
   }
 }
