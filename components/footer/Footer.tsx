@@ -21,7 +21,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
           <Image
             src="/images/logo.svg"
             alt="Boldo-logo"
-            width={156}
+            width={126}
             height={41}
           />
           <p>

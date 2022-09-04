@@ -16,6 +16,10 @@
     -ms-border-radius: 1.2rem;
     -o-border-radius: 1.2rem;
 
+    @media only screen and (max-width: 900px) {
+      padding: 3rem 0;
+    }
+
     h2 {
       color: varr.$main__white;
       font-size: 4rem;
@@ -23,12 +27,33 @@
       max-width: 45%;
       text-align: center;
       line-height: 6rem;
+
+      @media only screen and (max-width: 900px) {
+        font-size: 2.5rem;
+        line-height: 4rem;
+      }
+
+      @media only screen and (max-width: 550px) {
+        font-size: 2rem;
+        line-height: 3rem;
+        max-width: 65%;
+      }
     }
 
     form {
       display: flex;
       width: 40%;
       gap: 2rem;
+
+      @media only screen and (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+      }
+
+      @media only screen and (max-width: 550px) {
+        width: 60%;
+      }
 
       input {
         border-radius: 24rem;
@@ -60,11 +85,26 @@
     margin: 12rem auto 8rem auto;
     gap: 8rem;
 
+    @media only screen and (max-width: 900px) {
+      margin: 10rem auto 8rem auto;
+    }
+
+    @media only screen and (max-width: 550px) {
+      flex-direction: column;
+      gap: 4rem;
+      margin: -1rem auto 8rem auto;
+    }
+
     &__logo {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 3rem;
+
+      @media only screen and (max-width: 550px) {
+        align-self: center;
+        gap: 2rem;
+      }
 
       p {
         max-width: 30rem;
