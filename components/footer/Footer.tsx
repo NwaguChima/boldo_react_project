@@ -63,7 +63,14 @@ const Footer: React.FC<FooterProps> = ({}) => {
                 <Link href="/products">
                   <a>Careers</a>
                 </Link>
-                <span>Hiring</span>
+                <span>
+                  <ButtonSecondary
+                    content="Hiring!"
+                    width="4rem"
+                    height="2rem"
+                    footer
+                  />
+                </span>
               </li>
               <li>
                 <Link href="/services">
