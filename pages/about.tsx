@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import Footer from "../components/footer/Footer";
 import HeaderNav from "../components/headerNav/HeaderNav";
 import OurNumbers from "../components/ourNumbers/OurNumbers";
 import OurStory from "../components/ourStory/OurStory";
@@ -35,6 +36,7 @@ export const About: React.FC<AboutProps> = ({}) => {
         <OurTeam />
         <OurValues />
       </main>
+      <Footer />
     </div>
   );
 };
