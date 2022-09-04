@@ -1,1 +1,6 @@
 @use "../../styles/variables" as varr;
+
+.values {
+  background-color: varr.$color__primary;
+  padding: 8rem 30rem 7rem 30rem;
+}
