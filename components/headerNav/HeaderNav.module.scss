@@ -6,6 +6,7 @@
   align-items: center;
   padding: 3rem 0;
   color: varr.$color__primary;
+  position: relative;
 
   &__list {
     display: flex;
@@ -20,7 +21,6 @@
   }
 
   &__icons {
-    color: varr.$color__green;
     font-size: 3rem;
     cursor: pointer;
     display: none;
@@ -42,34 +42,117 @@
       -o-transform: scale(1.15);
     }
   }
+
+  &__slider {
+    padding: 2rem;
+    position: absolute;
+    top: 4rem;
+    right: -4rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    i {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      li {
+        a {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
 }
 
 .light,
 .dark {
-  li:not(:last-child) {
-    border-bottom: 2px solid transparent;
-    margin-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
+  ul {
+    li:not(:last-child) {
+      border-bottom: 2px solid transparent;
+      margin-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+    }
   }
 }
 
-.dark > li > a {
+.dark > ul > li > a {
   color: varr.$main__white;
 }
 
 .light {
-  li:not(:last-child):hover {
-    border-bottom: 2px solid varr.$color__primary;
+  ul {
+    li:not(:last-child):hover {
+      border-bottom: 2px solid varr.$color__primary;
+    }
+  }
+
+  .nav__icons {
+    color: varr.$color__primary;
+  }
+
+  .nav__slider {
+    background-color: varr.$color__primary;
+
+    ul {
+      li {
+        a {
+          color: varr.$main__white;
+        }
+      }
+    }
+
+    i {
+      color: varr.$main__white;
+
+      &:hover {
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        -moz-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        -o-transform: scale(1.15);
+      }
+    }
   }
 }
 
 .dark {
-  li:not(:last-child):hover {
-    border-bottom: 2px solid varr.$main__white;
+  ul {
+    li:not(:last-child):hover {
+      border-bottom: 2px solid varr.$main__white;
+    }
+  }
+
+  .nav__icons {
+    color: varr.$main__white;
+  }
+
+  .nav__slider {
+    background-color: varr.$main__white;
+
+    i {
+      color: varr.$color__primary;
+
+      &:hover {
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        -moz-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        -o-transform: scale(1.15);
+      }
+    }
   }
 }

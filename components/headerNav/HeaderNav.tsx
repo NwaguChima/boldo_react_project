@@ -4,6 +4,7 @@ import React from "react";
 import { ButtonPrimary } from "../buttons/ButtonPrimary";
 import styles from "./HeaderNav.module.scss";
 import { IoCloseOutline, IoMenuSharp } from "react-icons/io5";
+import { MobileNav } from "./MobileNav";
 
 interface HeaderNavProps {
   mode: "light" | "dark";
@@ -11,7 +12,11 @@ interface HeaderNavProps {
 
 const HeaderNav: React.FC<HeaderNavProps> = ({ mode }) => {
   return (
-    <nav className={styles.nav}>
+    <nav
+      className={`${styles.nav} ${
+        mode === "dark" ? styles.dark : styles.light
+      }`}
+    >
       <Link href="/">
         <a>
           <Image
@@ -22,11 +27,7 @@ const HeaderNav: React.FC<HeaderNavProps> = ({ mode }) => {
           />
         </a>
       </Link>
-      <ul
-        className={`${styles.nav__list} ${
-          mode == "dark" ? styles.dark : styles.light
-        }`}
-      >
+      <ul className={`${styles.nav__list} `}>
         <li>
           <Link href="/product">
             <a>Product</a>
@@ -55,7 +56,9 @@ const HeaderNav: React.FC<HeaderNavProps> = ({ mode }) => {
       </ul>
       <div className={styles.nav__icons}>
         <IoMenuSharp />
-        {/* <IoCloseOutline /> */}
+        <div className={styles.nav__slider}>
+          <MobileNav mode={mode} />
+        </div>
       </div>
     </nav>
   );
