@@ -22,7 +22,7 @@ const OurValues: React.FC<OurValuesProps> = ({}) => {
             height={150}
             width={150}
           />
-          <div className={styles.value__text}>
+          <div className={styles.values__text}>
             <h4>We are commited.</h4>
             <p>
               Conversion angel investor entrepreneur first mover advantage.
@@ -37,7 +37,7 @@ const OurValues: React.FC<OurValuesProps> = ({}) => {
             height={150}
             width={150}
           />
-          <div className={styles.value__text}>
+          <div className={styles.values__text}>
             <h4>We are responsible.</h4>
             <p>
               Conversion angel investor entrepreneur first mover advantage.
@@ -52,7 +52,7 @@ const OurValues: React.FC<OurValuesProps> = ({}) => {
             height={150}
             width={150}
           />
-          <div className={styles.value__text}>
+          <div className={styles.values__text}>
             <h4>We aim for progress.</h4>
             <p>
               Conversion angel investor entrepreneur first mover advantage.

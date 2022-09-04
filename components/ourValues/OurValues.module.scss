@@ -2,7 +2,25 @@
 
 .values {
   background-color: varr.$color__primary;
-  padding: 8rem 30rem 7rem 30rem;
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 30rem 7rem 27rem;
+
+  @media only screen and (min-width: 1600px) {
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    padding: 8rem 15rem 7rem 15rem;
+  }
+
+  @media only screen and (max-width: 700px) {
+    padding: 8rem 7rem 7rem 7rem;
+  }
+
+  @media only screen and (max-width: 700px) {
+    padding: 5rem 3rem 4rem 3rem;
+  }
 
   &__container {
     display: flex;
@@ -10,10 +28,39 @@
     margin-top: 6rem;
     gap: 5rem;
 
+    @media only screen and (max-width: 450px) {
+      margin-top: 3rem;
+    }
+
     &__item {
       display: flex;
-      align-items: center;
       gap: 4rem;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 60rem;
+
+    h4 {
+      font-size: 2.3rem;
+      font-weight: 400;
+      color: varr.$main__white;
+
+      @media only screen and (max-width: 450px) {
+        font-size: 1.6rem;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: varr.$off__white;
+
+      @media only screen and (max-width: 450px) {
+        font-size: 1.2rem;
+      }
     }
   }
 }
