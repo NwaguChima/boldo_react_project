@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { ButtonPrimary } from "../buttons/ButtonPrimary";
 import styles from "./HeaderNav.module.scss";
 import { IoCloseOutline, IoMenuSharp } from "react-icons/io5";
@@ -11,6 +11,9 @@ interface HeaderNavProps {
 }
 
 const HeaderNav: React.FC<HeaderNavProps> = ({ mode }) => {
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  console.log("isMobileNavOpen", isMobileNavOpen);
+
   return (
     <nav
       className={`${styles.nav} ${
@@ -55,10 +58,16 @@ const HeaderNav: React.FC<HeaderNavProps> = ({ mode }) => {
         </li>
       </ul>
       <div className={styles.nav__icons}>
-        <IoMenuSharp />
-        <div className={styles.nav__slider}>
-          <MobileNav mode={mode} />
-        </div>
+        {!isMobileNavOpen && (
+          <IoMenuSharp onClick={() => setIsMobileNavOpen(true)} />
+        )}
+      </div>
+      <div
+        className={`${styles.nav__slider} ${
+          isMobileNavOpen ? styles.sliderOpen : styles.sliderClose
+        }`}
+      >
+        <MobileNav mode={mode} setNav={setIsMobileNavOpen} />
       </div>
     </nav>
   );

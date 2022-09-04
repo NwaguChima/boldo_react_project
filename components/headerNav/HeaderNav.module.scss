@@ -45,9 +45,9 @@
 
   &__slider {
     padding: 2rem;
-    position: absolute;
+    position: fixed;
     top: 4rem;
-    right: -4rem;
+    right: 0;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -105,7 +105,7 @@
   }
 
   .nav__slider {
-    background-color: varr.$color__primary;
+    background-color: rgba(varr.$color__primary, 0.9);
 
     ul {
       li {
@@ -141,7 +141,7 @@
   }
 
   .nav__slider {
-    background-color: varr.$main__white;
+    background-color: rgba(varr.$main__white, 0.9);
 
     i {
       color: varr.$color__primary;
@@ -153,6 +153,34 @@
         -ms-transform: scale(1.15);
         -o-transform: scale(1.15);
       }
+    }
+  }
+}
+
+.sliderOpen {
+  animation: open 1s forwards;
+  -webkit-animation: open 1s forwards;
+
+  @keyframes open {
+    0% {
+      right: -40rem;
+    }
+    100% {
+      right: 0;
+    }
+  }
+}
+
+.sliderClose {
+  animation: close 1s forwards;
+  -webkit-animation: close 1s forwards;
+
+  @keyframes close {
+    0% {
+      right: 0;
+    }
+    100% {
+      right: -40rem;
     }
   }
 }

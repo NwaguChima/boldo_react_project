@@ -2,17 +2,17 @@ import Link from "next/link";
 import React from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import ButtonPrimary from "../buttons/ButtonPrimary";
-import styles from "./HeaderNav.module.scss";
 
 interface MobileNavProps {
   mode: "light" | "dark";
+  setNav: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const MobileNav: React.FC<MobileNavProps> = ({ mode }) => {
+export const MobileNav: React.FC<MobileNavProps> = ({ mode, setNav }) => {
   return (
     <>
       <i>
-        <IoCloseOutline />
+        <IoCloseOutline onClick={() => setNav(false)} />
       </i>
 
       <ul>
