@@ -22,11 +22,14 @@
       font-weight: 400;
       max-width: 45%;
       text-align: center;
+      line-height: 6rem;
     }
 
     form {
       display: flex;
       width: 40%;
+      gap: 2rem;
+
       input {
         border-radius: 24rem;
         -webkit-border-radius: 24rem;
