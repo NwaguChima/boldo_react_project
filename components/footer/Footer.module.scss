@@ -26,7 +26,7 @@
 
     form {
       display: flex;
-      width: 30%;
+      width: 40%;
       input {
         border-radius: 24rem;
         -webkit-border-radius: 24rem;
@@ -41,6 +41,11 @@
 
         &:focus {
           outline: none;
+          border-bottom: 2px solid varr.$color__green;
+
+          &:invalid {
+            border-bottom: 2px solid orangered;
+          }
         }
       }
     }
