@@ -3,4 +3,17 @@
 .values {
   background-color: varr.$color__primary;
   padding: 8rem 30rem 7rem 30rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    gap: 5rem;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+    }
+  }
 }
