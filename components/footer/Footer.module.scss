@@ -55,7 +55,6 @@
   }
 
   &__list {
-    background-color: rebeccapurple;
     display: flex;
     width: 90%;
     margin: 12rem auto 8rem auto;
@@ -81,4 +80,32 @@
       justify-content: space-around;
     }
   }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      li a {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: varr.$color__grey;
+      }
+    }
+  }
+}
+
+.careers {
+  display: flex;
+  gap: 0.5rem;
 }
