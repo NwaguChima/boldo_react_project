@@ -39,24 +39,12 @@ const Header: React.FC<HeaderProps> = ({}) => {
             />
           </div>
         </div>
-        <div className={styles.heroContainer__images}>
+        <div className={styles.heroContainer__image}>
           <Image
-            src="/images/Frame-1.svg"
+            src="/images/HeroGraphics.svg"
             alt="hero-image"
             width={493}
-            height={231}
-          />
-          <Image
-            src="/images/Group-3.svg"
-            alt="hero-image"
-            width={192}
-            height={165}
-          />
-          <Image
-            src="/images/Group-2.svg"
-            alt="hero-image"
-            width={261}
-            height={165}
+            height={423}
           />
         </div>
       </div>
