@@ -43,10 +43,48 @@ const Header: React.FC<HeaderProps> = ({}) => {
           <Image
             src="/images/HeroGraphics.svg"
             alt="hero-image"
-            width={493}
+            width={500}
             height={423}
           />
         </div>
+      </div>
+      <div className={styles.header__logos}>
+        <Image
+          src="/images/Logo.svg"
+          alt="logo images"
+          width={145}
+          height={42}
+        />
+        <Image
+          src="/images/preston_logo.svg"
+          alt="logo images"
+          width={145}
+          height={42}
+        />
+        <Image
+          src="/images/Logo.svg"
+          alt="logo images"
+          width={145}
+          height={42}
+        />
+        <Image
+          src="/images/preston_logo.svg"
+          alt="logo images"
+          width={145}
+          height={42}
+        />
+        <Image
+          src="/images/Logo.svg"
+          alt="logo images"
+          width={145}
+          height={42}
+        />
+        <Image
+          src="/images/preston_logo.svg"
+          alt="logo images"
+          width={145}
+          height={42}
+        />
       </div>
     </header>
   );
