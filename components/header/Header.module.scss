@@ -1,6 +1,12 @@
 @use "../../styles/variables" as varr;
 
 .header {
+  background-image: radial-gradient(
+    circle farthest-side at 140% -90%,
+    varr.$main__white 10%,
+    varr.$off__white 70%,
+    varr.$main__white 70%
+  );
   padding-left: varr.$nav__padding;
   padding-right: varr.$nav__padding;
   min-height: 80rem;
