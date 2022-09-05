@@ -2,7 +2,14 @@
 
 .footer {
   &__box {
-    background-color: varr.$color__primary;
+    // background-color: varr.$color__primary;
+    background-image: radial-gradient(
+      circle farthest-side at 100% -125%,
+      varr.$color__primary 10%,
+      varr.$color__secondary 70%,
+      varr.$color__primary 70%
+    );
+    position: relative;
     width: 90%;
     margin: 10rem auto;
     display: flex;
@@ -15,6 +22,7 @@
     -moz-border-radius: 1.2rem;
     -ms-border-radius: 1.2rem;
     -o-border-radius: 1.2rem;
+    overflow: hidden;
 
     @media only screen and (max-width: 900px) {
       padding: 3rem 0;
@@ -150,3 +158,18 @@
   gap: 0.5rem;
   align-items: center;
 }
+
+// .arc {
+//   background: rebeccapurple;
+//   position: absolute;
+//   height: 1493px;
+//   width: 1493px;
+//   right: -50%;
+//   bottom: 30%;
+
+//   border-radius: 50%;
+//   -webkit-border-radius: 50%;
+//   -moz-border-radius: 50%;
+//   -ms-border-radius: 50%;
+//   -o-border-radius: 50%;
+// }
