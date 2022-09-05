@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import React from "react";
 import AboutHeading2 from "../aboutHeading2/AboutHeading2";
 import styles from "./OurTeam.module.scss";
@@ -15,17 +15,32 @@ const OurTeam: React.FC<OurTeamProps> = ({}) => {
       />
       <div className={styles.container}>
         <div className={styles.container__card}>
-          <img src="/images/team-1.svg" alt="Michael Scott" />
+          <Image
+            src="/images/team-1.svg"
+            alt="Michael Scott"
+            width={270}
+            height={318}
+          />
           <h4>Michael Scott</h4>
           <p>General Manager</p>
         </div>
         <div className={styles.container__card}>
-          <img src="/images/team-2.svg" alt="Dwight Schrute" />
+          <Image
+            src="/images/team-2.svg"
+            alt="Dwight Schrute"
+            width={270}
+            height={318}
+          />
           <h4>Dwight Schrute</h4>
           <p>General Manager</p>
         </div>
         <div className={styles.container__card}>
-          <img src="/images/team-3.svg" alt="Jim Halpert" />
+          <Image
+            src="/images/team-3.svg"
+            alt="Jim Halpert"
+            width={270}
+            height={318}
+          />
           <h4>Jim Halpert</h4>
           <p>General Manager</p>
         </div>

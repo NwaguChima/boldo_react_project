@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React from "react";
 import AboutHeading2 from "../aboutHeading2/AboutHeading2";

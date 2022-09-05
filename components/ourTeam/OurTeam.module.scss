@@ -18,7 +18,11 @@
   padding: 0 4rem;
 
   @media only screen and (max-width: 1200px) {
-    gap: 0.5rem;
+    gap: 2rem;
+  }
+
+  @media only screen and (max-width: 900px) {
+    gap: 1rem;
   }
 
   &__card {
