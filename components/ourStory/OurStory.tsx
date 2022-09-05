@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import React from "react";
 import AboutHeading2 from "../aboutHeading2/AboutHeading2";
 import styles from "./OurStory.module.scss";
@@ -10,15 +11,40 @@ const OurStory: React.FC<OurStoryProps> = ({}) => {
     <section className={styles.ourStory}>
       <div className={styles.ourStory__images}>
         <div className={styles.box}>
-          <img src="/images/story-1.svg" alt="Our Story" />
-          <img src="/images/story-4.svg" alt="Our Story" />
+          <Image
+            src="/images/story-1.svg"
+            alt="Our Story"
+            width={210}
+            height={225}
+          />
+          <Image
+            src="/images/story-4.svg"
+            alt="Our Story"
+            width={210}
+            height={225}
+          />
         </div>
         <div className={styles.box}>
-          <img src="/images/story-2.svg" alt="Our Story" />
+          <Image
+            src="/images/story-2.svg"
+            alt="Our Story"
+            width={277}
+            height={425}
+          />
         </div>
         <div className={styles.box}>
-          <img src="/images/story-3.svg" alt="Our Story" />
-          <img src="/images/story-5.svg" alt="Our Story" />
+          <Image
+            src="/images/story-3.svg"
+            alt="Our Story"
+            width={210}
+            height={225}
+          />
+          <Image
+            src="/images/story-5.svg"
+            alt="Our Story"
+            width={210}
+            height={225}
+          />
         </div>
       </div>
       <AboutHeading2
