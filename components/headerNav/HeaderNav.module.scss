@@ -46,6 +46,7 @@
   &__slider {
     padding: 2rem;
     position: fixed;
+    opacity: 0;
     top: 4rem;
     right: 0;
     border-radius: 5px;
@@ -150,6 +151,7 @@
 
   .nav__slider {
     background-color: rgba(varr.$main__white, 0.9);
+    right: -40rem;
 
     i {
       color: varr.$main__white;
@@ -170,28 +172,32 @@
 }
 
 .sliderOpen {
-  animation: open 1s forwards;
-  -webkit-animation: open 1s forwards;
+  animation: open 10s forwards;
+  -webkit-animation: open 10s forwards;
 
   @keyframes open {
     0% {
+      opacity: 0;
       right: -40rem;
     }
     100% {
+      opacity: 1;
       right: 0;
     }
   }
 }
 
 .sliderClose {
-  animation: close 1s forwards;
-  -webkit-animation: close 1s forwards;
+  animation: close 10s forwards;
+  -webkit-animation: close 10s forwards;
 
   @keyframes close {
     0% {
+      opacity: 1;
       right: 0;
     }
     100% {
+      opacity: 0;
       right: -40rem;
     }
   }
