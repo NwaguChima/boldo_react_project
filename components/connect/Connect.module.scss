@@ -1,7 +1,7 @@
 @use "../../styles/variables" as varr;
 
 .connect {
-  background-color: rebeccapurple;
+  background-color: #e5e5e5;
 
   &__container {
     padding: 8rem varr.$nav__padding varr.$nav__padding varr.$nav__padding;
@@ -30,5 +30,33 @@
       font-size: 3.5rem;
       font-weight: 400;
     }
+
+    &__holder {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  &__line,
+  &__line2 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    i {
+      font-size: 3rem;
+    }
+  }
+
+  &__line2 {
+    i {
+      font-size: 2rem;
+    }
+    background-color: varr.$main__white;
+    width: 45rem;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    padding: 1rem 1rem;
   }
 }
