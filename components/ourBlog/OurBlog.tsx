@@ -47,10 +47,9 @@ const OurBlog: React.FC<OurBlogProps> = ({}) => {
           center
         />
         <div className={styles.blog__bottom__list}>
-          <BlogItem />
-          <BlogItem />
-          <BlogItem />
-          {/* {blogData} */}
+          {blogData.map((item, index) => (
+            <BlogItem key={index} data={item} />
+          ))}
         </div>
         <ButtonPrimary
           content="Load more"

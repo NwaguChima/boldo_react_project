@@ -1,24 +1,27 @@
 import Image from "next/image";
 import React from "react";
+import { blogDataType } from "../../utils/data";
 import styles from "./BlogItem.module.scss";
 
-interface BlogItemProps {}
+interface BlogItemProps {
+  data: blogDataType;
+}
 
-const BlogItem: React.FC<BlogItemProps> = ({}) => {
+const BlogItem: React.FC<BlogItemProps> = ({ data }) => {
   return (
     <div className={styles.blogItem}>
       <div className={styles.blogItem__top}>
-        <Image src="/images/grid-1.svg" alt="blog" width={300} height={209} />
+        <Image src={data.image} alt="blog" width={300} height={209} />
         <h6>
-          Category <span>November 22, 2021</span>
+          {data.title} <span>{data.date}</span>
         </h6>
-        <p>Pitch termsheet backing validation focus release.</p>
+        <p>{data.text}</p>
       </div>
       <div className={styles.blogItem__bottom}>
         <figure>
-          <Image src="/images/grid-1-1.svg" alt="blog" width={32} height={32} />
+          <Image src={data.authorBadge} alt="blog" width={32} height={32} />
         </figure>
-        <figcaption>Chandler Bing</figcaption>
+        <figcaption>{data.author}</figcaption>
       </div>
     </div>
   );
