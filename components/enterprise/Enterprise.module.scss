@@ -12,6 +12,12 @@
     justify-content: space-between;
     align-items: flex-end;
 
+    @media only screen and (max-width: 440px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
     &__icon {
       display: flex;
       gap: 2rem;
@@ -38,8 +44,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     gap: 2rem;
+
+    @media only screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
   }
 
   &__content {
@@ -51,10 +60,29 @@
     flex-direction: column;
     gap: 2.5rem;
     width: 30rem;
-    min-height: 30rem;
+    min-height: 25rem;
 
     p {
       line-height: 3rem;
+
+      @media only screen and (max-width: 1000px) {
+        line-height: 2.2rem;
+      }
+    }
+  }
+
+  &__profile {
+    display: flex;
+    gap: 1rem;
+
+    &__details {
+      color: varr.$color__primary;
+      p {
+        font-size: 1.4rem;
+      }
+      span {
+        font-size: 1.2rem;
+      }
     }
   }
 }
