@@ -31,7 +31,7 @@ const Enterprise: React.FC<EnterpriseProps> = ({}) => {
           </p>
           <div className={styles.enterprise__profile}>
             <Image
-              src="/images/ent-1.svg"
+              src="/images/ent-1.png"
               alt="avater"
               height={58}
               width={58}
@@ -50,7 +50,7 @@ const Enterprise: React.FC<EnterpriseProps> = ({}) => {
           </p>
           <div className={styles.enterprise__profile}>
             <Image
-              src="/images/ent-2.svg"
+              src="/images/ent-2.png"
               alt="avater"
               height={58}
               width={58}
@@ -69,7 +69,7 @@ const Enterprise: React.FC<EnterpriseProps> = ({}) => {
           </p>
           <div className={styles.enterprise__profile}>
             <Image
-              src="/images/ent-3.svg"
+              src="/images/ent-3.png"
               alt="avater"
               height={58}
               width={58}

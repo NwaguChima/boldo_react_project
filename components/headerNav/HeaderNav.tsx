@@ -22,7 +22,7 @@ const HeaderNav: React.FC<HeaderNavProps> = ({ mode }) => {
       <Link href="/">
         <a>
           <Image
-            src={`/images/${mode == "dark" ? "logo_light" : "logo"}.svg`}
+            src={`/images/${mode == "dark" ? "logo_light" : "logo"}.png`}
             alt="logo"
             width={100}
             height={42}

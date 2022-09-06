@@ -16,7 +16,7 @@ const OurBlog: React.FC<OurBlogProps> = ({}) => {
     <section className={styles.blog}>
       <div className={styles.blog__top}>
         <Image
-          src="/images/blog_cover.svg"
+          src="/images/blog_cover.png"
           alt="blog"
           width={1100}
           height={403}

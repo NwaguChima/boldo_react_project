@@ -11,7 +11,7 @@ const OurStory: React.FC<OurStoryProps> = ({}) => {
       <div className={styles.ourStory__images}>
         <div className={styles.box}>
           <Image
-            src="/images/story-1.svg"
+            src="/images/story-1.png"
             alt="Our Story"
             width={210}
             height={225}
@@ -25,7 +25,7 @@ const OurStory: React.FC<OurStoryProps> = ({}) => {
         </div>
         <div className={styles.box}>
           <Image
-            src="/images/story-2.svg"
+            src="/images/story-2.png"
             alt="Our Story"
             width={277}
             height={425}
@@ -39,7 +39,7 @@ const OurStory: React.FC<OurStoryProps> = ({}) => {
             height={225}
           />
           <Image
-            src="/images/story-5.svg"
+            src="/images/story-5.png"
             alt="Our Story"
             width={210}
             height={225}

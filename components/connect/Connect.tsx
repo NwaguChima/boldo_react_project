@@ -13,7 +13,7 @@ const Connect: React.FC<ConnectProps> = ({}) => {
       <div className={styles.connect__container}>
         <div className={styles.connect__container__item}>
           <Image
-            src="/images/connect-1.svg"
+            src="/images/connect-1.png"
             alt="Connect"
             height={610}
             width={498}
@@ -82,7 +82,7 @@ const Connect: React.FC<ConnectProps> = ({}) => {
             </div>
           </div>
           <Image
-            src="/images/connect-2.svg"
+            src="/images/connect-2.png"
             alt="Connect"
             height={610}
             width={498}
