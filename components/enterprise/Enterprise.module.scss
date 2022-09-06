@@ -1,0 +1,36 @@
+@use "../../styles/variables" as varr;
+
+.enterprise {
+  background-color: varr.$color__primary;
+  padding: 7rem varr.$nav__padding 5rem varr.$nav__padding;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__icon {
+      display: flex;
+      gap: 2rem;
+
+      i {
+        background-color: varr.$main__white;
+        color: varr.$color__primary;
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+    }
+  }
+}

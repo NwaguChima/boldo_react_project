@@ -14,9 +14,13 @@ const Enterprise: React.FC<EnterpriseProps> = ({}) => {
           heading="An enterprise template to ramp up your company website"
           mode="dark"
         />
-        <div>
-          <BsArrowLeftShort />
-          <BsArrowRightShort />
+        <div className={styles.enterprise__header__icon}>
+          <i>
+            <BsArrowLeftShort />
+          </i>
+          <i>
+            <BsArrowRightShort />
+          </i>
         </div>
       </div>
       <div className={styles.enterprise__body}>
