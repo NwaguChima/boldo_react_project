@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./heading2.module.scss";
+import styles from "./Heading2.module.scss";
 
 interface Heading2Props {
   text?: string;
