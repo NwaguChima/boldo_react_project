@@ -16,6 +16,14 @@
       justify-content: space-between;
       align-items: center;
       gap: 8rem;
+
+      @media only screen and (max-width: 900px) {
+        flex-direction: column;
+      }
+
+      @media only screen and (max-width: 900px) {
+        gap: 4rem;
+      }
     }
   }
 
@@ -55,8 +63,19 @@
     }
     background-color: varr.$main__white;
     width: 45rem;
+    cursor: pointer;
     box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
     border-radius: 4px;
-    padding: 1rem 1rem;
+    padding: 1rem 1.5rem;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+
+    &:hover {
+      background-color: varr.$color__primary;
+      color: varr.$main__white;
+    }
   }
 }
