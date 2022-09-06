@@ -1,4 +1,13 @@
-export const blog = [
+export type blogDataType = {
+  title: string;
+  date: string;
+  text: string;
+  image: string;
+  author: string;
+  authorBadge: string;
+};
+
+export const blogData = [
   {
     title: "Category",
     text: "Pitch termsheet backing validation focus release.",

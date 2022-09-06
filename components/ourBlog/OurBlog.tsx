@@ -4,6 +4,7 @@ import { IoCheckmarkCircleSharp } from "react-icons/io5";
 import BlogItem from "../blogItem/BlogItem";
 import ButtonPrimary from "../buttons/ButtonPrimary";
 import Heading2 from "../heading2/Heading2";
+import { blogData, blogDataType } from "../../utils/data";
 import styles from "./OurBlog.module.scss";
 
 interface OurBlogProps {}
@@ -49,6 +50,7 @@ const OurBlog: React.FC<OurBlogProps> = ({}) => {
           <BlogItem />
           <BlogItem />
           <BlogItem />
+          {/* {blogData} */}
         </div>
         <ButtonPrimary
           content="Load more"
