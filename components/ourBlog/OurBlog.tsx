@@ -4,12 +4,14 @@ import { IoCheckmarkCircleSharp } from "react-icons/io5";
 import BlogItem from "../blogItem/BlogItem";
 import ButtonPrimary from "../buttons/ButtonPrimary";
 import Heading2 from "../heading2/Heading2";
-import { blogData, blogDataType } from "../../utils/data";
+import { blogData } from "../../utils/data";
 import styles from "./OurBlog.module.scss";
 
 interface OurBlogProps {}
 
 const OurBlog: React.FC<OurBlogProps> = ({}) => {
+  const [range, setRange] = React.useState<number>(3);
+
   return (
     <section className={styles.blog}>
       <div className={styles.blog__top}>
@@ -47,7 +49,7 @@ const OurBlog: React.FC<OurBlogProps> = ({}) => {
           center
         />
         <div className={styles.blog__bottom__list}>
-          {blogData.map((item, index) => (
+          {blogData.slice(0, range).map((item, index) => (
             <BlogItem key={index} data={item} />
           ))}
         </div>
@@ -57,7 +59,9 @@ const OurBlog: React.FC<OurBlogProps> = ({}) => {
           width="21rem"
           height="6rem"
           type="outline"
-          onClick={() => {}}
+          onClick={() => {
+            setRange(range + 3);
+          }}
         />
       </div>
     </section>

@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Connect from "../components/connect/Connect";
 import Enterprise from "../components/enterprise/Enterprise";
+import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import OurBlog from "../components/ourBlog/OurBlog";
 import OurServices from "../components/ourServices/OurServices";
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
         <Enterprise />
         <OurBlog />
       </main>
+      <Footer />
     </div>
   );
 };
