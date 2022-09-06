@@ -17,12 +17,12 @@ export const MobileNav: React.FC<MobileNavProps> = ({ mode, setNav }) => {
 
       <ul>
         <li>
-          <Link href="/product">
+          <Link href="/about">
             <a>Product</a>
           </Link>
         </li>
         <li>
-          <Link href="/services">
+          <Link href="/about">
             <a>Services</a>
           </Link>
         </li>

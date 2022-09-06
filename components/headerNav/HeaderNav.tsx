@@ -12,7 +12,6 @@ interface HeaderNavProps {
 
 const HeaderNav: React.FC<HeaderNavProps> = ({ mode }) => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-  console.log("isMobileNavOpen", isMobileNavOpen);
 
   return (
     <nav
@@ -32,12 +31,12 @@ const HeaderNav: React.FC<HeaderNavProps> = ({ mode }) => {
       </Link>
       <ul className={`${styles.nav__list} `}>
         <li>
-          <Link href="/product">
+          <Link href="/about">
             <a>Product</a>
           </Link>
         </li>
         <li>
-          <Link href="/services">
+          <Link href="/about">
             <a>Services</a>
           </Link>
         </li>
