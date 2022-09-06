@@ -18,12 +18,12 @@ const Connect: React.FC<ConnectProps> = ({}) => {
             height={610}
             width={498}
           />
-          <div className={styles.conect__details}>
+          <div className={styles.connect__details}>
             <h3>
               We connect our customers with the best, and help them keep up-and
               stay open.
             </h3>
-            <div className={styles.conect__details__holder}>
+            <div className={styles.connect__details__holder}>
               <div className={styles.connect__line}>
                 <i>
                   <IoCheckmarkCircleSharp />
@@ -43,23 +43,24 @@ const Connect: React.FC<ConnectProps> = ({}) => {
                 <p>Business-to-consumer long tail.</p>
               </div>
             </div>
+
+            <ButtonPrimary
+              content="Start now"
+              height="6rem"
+              width="21rem"
+              mode="light"
+              type="filled"
+              onClick={() => {}}
+            />
           </div>
-          <ButtonPrimary
-            content="Start now"
-            height="6rem"
-            width="21rem"
-            mode="light"
-            type="filled"
-            onClick={() => {}}
-          />
         </div>
         <div className={styles.connect__container__item}>
-          <div className={styles.conect__details}>
+          <div className={styles.connect__details}>
             <h3>
               We connect our customers with the best, and help them keep up-and
               stay open.
             </h3>
-            <div className={styles.conect__details__holder}>
+            <div className={styles.connect__details__holder}>
               <div className={styles.connect__line2}>
                 <i>
                   <FiFeather />
