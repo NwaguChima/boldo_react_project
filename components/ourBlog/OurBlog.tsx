@@ -46,6 +46,8 @@ const OurBlog: React.FC<OurBlogProps> = ({}) => {
         />
         <div className={styles.blog__bottom__list}>
           <BlogItem />
+          <BlogItem />
+          <BlogItem />
         </div>
       </div>
     </section>

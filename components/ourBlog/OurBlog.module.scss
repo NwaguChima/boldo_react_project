@@ -35,6 +35,12 @@
     align-items: center;
     margin-top: 10rem;
     gap: 4rem;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
   }
 }
 
