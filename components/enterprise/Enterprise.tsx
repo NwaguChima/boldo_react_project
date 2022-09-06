@@ -15,10 +15,10 @@ const Enterprise: React.FC<EnterpriseProps> = ({}) => {
           mode="dark"
         />
         <div className={styles.enterprise__header__icon}>
-          <i>
+          <i className={styles.left}>
             <BsArrowLeftShort />
           </i>
-          <i>
+          <i className={styles.right}>
             <BsArrowRightShort />
           </i>
         </div>

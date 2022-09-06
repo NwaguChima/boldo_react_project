@@ -34,3 +34,55 @@
     }
   }
 }
+
+.left {
+  &:hover {
+    svg {
+      animation: moveLeft 0.3s ease-in-out;
+      -webkit-animation: moveLeft 0.3s ease-in-out;
+    }
+  }
+}
+
+.right {
+  &:hover {
+    svg {
+      animation: moveRight 0.3s ease-in-out;
+      -webkit-animation: moveRight 0.3s ease-in-out;
+    }
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0) scale(1);
+    -webkit-transform: translateX(0) scale(1);
+    -moz-transform: translateX(0) scale(1);
+    -ms-transform: translateX(0) scale(1);
+    -o-transform: translateX(0) scale(1);
+  }
+  100% {
+    transform: translateX(-50%) scale(1.05);
+    -webkit-transform: translateX(-50%) scale(1.05);
+    -moz-transform: translateX(-50%) scale(1.05);
+    -ms-transform: translateX(-50%) scale(1.05);
+    -o-transform: translateX(-50%) scale(1.05);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0) scale(1);
+    -webkit-transform: translateX(0) scale(1);
+    -moz-transform: translateX(0) scale(1);
+    -ms-transform: translateX(0) scale(1);
+    -o-transform: translateX(0) scale(1);
+  }
+  100% {
+    transform: translateX(50%) scale(1.05);
+    -webkit-transform: translateX(50%) scale(1.05);
+    -moz-transform: translateX(50%) scale(1.05);
+    -ms-transform: translateX(50%) scale(1.05);
+    -o-transform: translateX(50%) scale(1.05);
+  }
+}
