@@ -45,7 +45,7 @@ export const blogData = [
     title: "Category",
     text: "Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
     date: "November 22, 2021",
-    image: "/images/grid-5svg",
+    image: "/images/grid-5.svg",
     author: "Rachel Green",
     authorBadge: "/images/grid-2-1.svg",
   },
