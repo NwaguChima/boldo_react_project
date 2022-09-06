@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
+import BlogItem from "../blogItem/BlogItem";
+import Heading2 from "../heading2/Heading2";
 import styles from "./OurBlog.module.scss";
 
 interface OurBlogProps {}
@@ -34,6 +36,16 @@ const OurBlog: React.FC<OurBlogProps> = ({}) => {
               </i>
             </div>
           </div>
+        </div>
+      </div>
+      <div className={styles.blog__bottom}>
+        <Heading2
+          text="Our Blog"
+          heading="Value proposition accelerator product management venture"
+          center
+        />
+        <div className={styles.blog__bottom__list}>
+          <BlogItem />
         </div>
       </div>
     </section>
