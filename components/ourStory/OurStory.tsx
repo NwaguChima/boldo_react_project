@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import AboutHeading2 from "../aboutHeading2/AboutHeading2";
+import Heading2 from "../heading2/Heading2";
 import styles from "./OurStory.module.scss";
 
 interface OurStoryProps {}
@@ -46,7 +46,7 @@ const OurStory: React.FC<OurStoryProps> = ({}) => {
           />
         </div>
       </div>
-      <AboutHeading2
+      <Heading2
         text="Our Story"
         heading="Handshake infographic mass market crowdfunding iteration."
         text2="Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration. Traction stock user experience deployment beta innovator incubator focus. Sales user experience branding growth hacking holy grail monetization conversion prototype stock network effects. Learning curve network effects return on investment bootstrapping business-to-consumer."

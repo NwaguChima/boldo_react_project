@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./AboutHeading2.module.scss";
+import styles from "./heading2.module.scss";
 
-interface AboutHeading2Props {
+interface Heading2Props {
   text: string;
   heading: string;
   text2?: string;
@@ -9,7 +9,7 @@ interface AboutHeading2Props {
   center?: boolean;
 }
 
-const AboutHeading2: React.FC<AboutHeading2Props> = ({
+const Heading2: React.FC<Heading2Props> = ({
   text,
   heading,
   text2,
@@ -28,4 +28,4 @@ const AboutHeading2: React.FC<AboutHeading2Props> = ({
     </div>
   );
 };
-export default AboutHeading2;
+export default Heading2;

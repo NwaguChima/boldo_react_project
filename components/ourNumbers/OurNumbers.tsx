@@ -1,5 +1,5 @@
 import React from "react";
-import AboutHeading2 from "../aboutHeading2/AboutHeading2";
+import Heading2 from "../heading2/Heading2";
 import styles from "./OurNumbers.module.scss";
 
 interface OurNumbersProps {}
@@ -7,7 +7,7 @@ interface OurNumbersProps {}
 const OurNumbers: React.FC<OurNumbersProps> = ({}) => {
   return (
     <section className={styles.numbers}>
-      <AboutHeading2
+      <Heading2
         text="Our numbers"
         heading="Handshake infographic mass market crowdfunding iteration."
         center
