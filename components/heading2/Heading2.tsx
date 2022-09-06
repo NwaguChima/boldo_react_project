@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./heading2.module.scss";
 
 interface Heading2Props {
-  text: string;
+  text?: string;
   heading: string;
   text2?: string;
   mode?: "light" | "dark";

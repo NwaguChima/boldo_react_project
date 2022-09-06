@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Connect from "../components/connect/Connect";
+import Enterprise from "../components/enterprise/Enterprise";
 import Header from "../components/header/Header";
 import OurServices from "../components/ourServices/OurServices";
 
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <main>
         <OurServices />
         <Connect />
+        <Enterprise />
       </main>
     </div>
   );
