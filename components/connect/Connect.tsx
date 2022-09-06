@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import ButtonPrimary from "../buttons/ButtonPrimary";
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
+import { FiFeather, FiEye, FiSun } from "react-icons/fi";
 import styles from "./Connect.module.scss";
 
 interface ConnectProps {}
@@ -59,21 +60,21 @@ const Connect: React.FC<ConnectProps> = ({}) => {
               stay open.
             </h3>
             <div className={styles.conect__details__holder}>
-              <div className={styles.connect__line}>
+              <div className={styles.connect__line2}>
                 <i>
-                  <IoCheckmarkCircleSharp />
+                  <FiFeather />
                 </i>
                 <p>We connect our customers with the best.</p>
               </div>
-              <div className={styles.connect__line}>
+              <div className={styles.connect__line2}>
                 <i>
-                  <IoCheckmarkCircleSharp />
+                  <FiEye />
                 </i>
                 <p>Advisor success customer launch party.</p>
               </div>
-              <div className={styles.connect__line}>
+              <div className={styles.connect__line2}>
                 <i>
-                  <IoCheckmarkCircleSharp />
+                  <FiSun />
                 </i>
                 <p>Business-to-consumer long tail.</p>
               </div>
