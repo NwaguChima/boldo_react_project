@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
 import BlogItem from "../blogItem/BlogItem";
+import ButtonPrimary from "../buttons/ButtonPrimary";
 import Heading2 from "../heading2/Heading2";
 import styles from "./OurBlog.module.scss";
 
@@ -49,6 +50,14 @@ const OurBlog: React.FC<OurBlogProps> = ({}) => {
           <BlogItem />
           <BlogItem />
         </div>
+        <ButtonPrimary
+          content="Load more"
+          mode="light"
+          width="21rem"
+          height="6rem"
+          type="outline"
+          onClick={() => {}}
+        />
       </div>
     </section>
   );
