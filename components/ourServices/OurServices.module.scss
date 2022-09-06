@@ -9,16 +9,28 @@
   align-items: center;
   gap: 7rem;
 
+  @media only screen and (max-width: 600px) {
+    padding: 6rem 4rem 6rem 4rem;
+  }
+
   &__box {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
 
     &__item {
       display: flex;
       flex-direction: column;
       justify-content: center;
       gap: 2.5rem;
+      @media only screen and (max-width: 600px) {
+        gap: 0rem;
+      }
 
       figure {
         display: flex;
@@ -27,9 +39,16 @@
         align-items: flex-start;
         gap: 2rem;
         color: varr.$main__white;
+        @media only screen and (max-width: 600px) {
+          gap: 0.5rem;
+        }
 
         figcaption {
           margin-left: 4.5rem;
+
+          @media only screen and (max-width: 600px) {
+            margin-left: 7.5rem;
+          }
         }
       }
 
@@ -47,6 +66,10 @@
           -moz-transition: all 0.2s;
           -ms-transition: all 0.2s;
           -o-transition: all 0.2s;
+
+          @media only screen and (max-width: 600px) {
+            margin-left: 7.5rem;
+          }
         }
 
         &:hover {
