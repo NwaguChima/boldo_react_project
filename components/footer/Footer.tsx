@@ -20,7 +20,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
       <div className={styles.footer__list}>
         <div className={styles.footer__list__logo}>
           <Image
-            src="/images/logo.svg"
+            src="/images/Logo.svg"
             alt="Boldo-logo"
             width={126}
             height={41}
